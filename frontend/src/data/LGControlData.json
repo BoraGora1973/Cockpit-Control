@@ -1,3 +1,32 @@
 [
-    
+    {
+        "type": "stateN",
+        "backend_name": "STORES_CONFIG_IN",
+        "width": "90",
+        "height": "90",
+        "left": "346",
+        "top": "770",
+        "offset_on": "0",
+        "offset_off": "0",
+        "imageProps": {
+            "imageDefault": "/LGControlPanel/Switch_Mid.png",
+            "additionalImageData": {
+                "CAT_1": "/LGControlPanel/Switch_Up.png",
+                "CAT_3": "/LGControlPanel/Switch_Down.png"
+            }
+        },
+        "debugMode": true,
+        "isClickable": true,
+        "clickProps": {
+            "clickBoundsHeightFactor": 1.8,
+            "clickBoundsWidthFactor": 1,
+            "mapping": {
+                "top" : "CAT_1",
+                "bottom" : "CAT_3"
+            }
+        },
+        "blinking": {
+            "color": "yellow"
+        }
+    }
 ]

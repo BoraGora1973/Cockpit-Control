@@ -178,7 +178,6 @@
             "additionalImageData": {
                 "ON": "/CMDSPanel/SWITCH_10_UP1.png",
                 "OFF": "/CMDSPanel/SWITCH_10_DOWN_1.png"
-
             }
         },
         "debugMode": false,
@@ -369,7 +368,7 @@
             "clickBoundsWidthFactor": 2
         },
         "string_props": {
-            "maxStringLength" : 3
+            "maxStringLength" : 4
         },
         "blinking": {
             "color": "none"

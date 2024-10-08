@@ -1,8 +1,5 @@
 import * as Interface from './Panels.interface'
 
-export const LGControlInitialValues: Interface.LGControlInterface['input'] = {
-}
-
 export const CMDSInitialValues: Interface.CMDSInterface['input'] = {
      "RWR_SWITCH_IN":	"",
      "JMR_SWITCH_IN":	"",
@@ -20,8 +17,12 @@ export const CMDSInitialValues: Interface.CMDSInterface['input'] = {
      "CH_QTY_IN":	"",
 }
 
+export const LandingGearInitialValues: Interface.LandingGearInterface['input'] = {
+     "STORES_CONFIG_IN":	"",
+}
+
 export const initialValues: { [K in keyof Interface.InterfaceMap]: Interface.InterfaceMap[K]['input'] } = {
-	"LGControl":	LGControlInitialValues,
 	"CMDS":	CMDSInitialValues,
+	"LandingGear":	LandingGearInitialValues,
 }
 

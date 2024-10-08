@@ -1,3 +1,10 @@
+#######################################
+# Doc 
+# https://www.xflight.de/
+# websocketking
+# https://chromewebstore.google.com/detail/websocket-king-client/cbcbkhdmedgianpaifchdaddpnmgnknn
+# ws://localhost:8765
+#######################################
 import json
 from typing import Any
 

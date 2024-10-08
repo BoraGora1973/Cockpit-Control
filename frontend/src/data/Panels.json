@@ -1,15 +1,5 @@
 [
     {
-        "panel_name" : "LGControl",
-        "panel_container": "L1",
-        "panel_url" : "./LGControlPanel/LG_Control.png",
-        "panel_data": "LGControlData",
-        "panel_resources" : "/LGControlPanel/",
-        "panel_scale": 100,
-        "panel_top": 40,
-        "panel_left": 130
-    },
-    {
         "panel_name" : "CMDS",
         "panel_container": "L1",
         "panel_url" : "./CMDSPanel/CMDS.png",
@@ -17,6 +7,16 @@
         "panel_resources" : "/CMDSPanel/",
         "panel_scale": 100,
         "panel_top": 300,
+        "panel_left": 150
+    },
+    {
+        "panel_name" : "LANDINGGEAR",
+        "panel_container": "L1",
+        "panel_url" : "./LGControlPanel/LG_Control.png",
+        "panel_data": "LGControlData",
+        "panel_resources" : "/LGControlPanel/",
+        "panel_scale": 100,
+        "panel_top": 0,
         "panel_left": 150
     }
 ]

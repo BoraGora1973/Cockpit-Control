@@ -5,7 +5,7 @@
         "gridDensity" : 5
     },
     "logger": {
-        "showLogger" : false,
+        "showLogger" : true,
         "properties": {
         "width" : 600,
         "maxHeight": 300,

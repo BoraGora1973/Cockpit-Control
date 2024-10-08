@@ -1,9 +1,3 @@
-export interface LGControlInterface {
-  input: {
-  }
-  handleSendRequest?: (switchName: string, switchValue: string) => void;
-}
-
 export interface CMDSInterface {
   input: {
      "RWR_SWITCH_IN":	string,
@@ -24,9 +18,16 @@ export interface CMDSInterface {
   handleSendRequest?: (switchName: string, switchValue: string) => void;
 }
 
+export interface LandingGearInterface {
+  input: {
+     "STORES_CONFIG_IN":	string,
+  }
+  handleSendRequest?: (switchName: string, switchValue: string) => void;
+}
+
 export type InterfaceMap = {
-     "LGControl":	LGControlInterface;
      "CMDS":	CMDSInterface;
+     "LandingGear":	LandingGearInterface;
 }
 
 export type InterfaceKey = keyof InterfaceMap;
