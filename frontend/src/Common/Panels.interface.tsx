@@ -18,16 +18,18 @@ export interface CMDSInterface {
   handleSendRequest?: (switchName: string, switchValue: string) => void;
 }
 
-export interface LandingGearInterface {
+export interface LANDINGGEARInterface {
   input: {
      "STORES_CONFIG_IN":	string,
+     "LIGHT_DEMO_IN":	string,
+     "NEEDLE_DEMO_IN":	string,
   }
   handleSendRequest?: (switchName: string, switchValue: string) => void;
 }
 
 export type InterfaceMap = {
      "CMDS":	CMDSInterface;
-     "LandingGear":	LandingGearInterface;
+     "LANDINGGEAR":	LANDINGGEARInterface;
 }
 
 export type InterfaceKey = keyof InterfaceMap;

@@ -28,5 +28,66 @@
         "blinking": {
             "color": "yellow"
         }
+    },
+    {
+        "type": "stateN",
+        "backend_name": "LIGHT_DEMO_IN",
+        "width": "100",
+        "height": "100",
+        "left": "200",
+        "top": "770",
+        "offset_on": "0",
+        "offset_off": "0",
+        "imageProps": {
+            "imageDefault": "/LGControlPanel/Light_off.png",
+            "additionalImageData": {
+                "ON": "/LGControlPanel/Light_on.png",
+                "OFF": "/LGControlPanel/Light_off.png"
+            }
+        },
+        "debugMode": true,
+        "isClickable": false,
+        "clickProps": {
+            "clickBoundsHeightFactor": 1.0,
+            "clickBoundsWidthFactor": 1.0            
+        },
+        "blinking": {
+            "color": "yellow"
+        }
+    },
+    {
+        "type": "analog",
+        "backend_name": "NEEDLE_DEMO_IN",
+        "width": "375",
+        "height": "375",
+        "left": "100",
+        "top": "100",
+        "offset_left": "0",
+        "offset_top": "0",
+        "imageProps": {
+            "imageDefault": "/EPUFuelPanel/EPU_Fuel_1.png"
+        },
+        "zero_rotation": "0",
+        "debugMode": false,
+        "isClickable": false,
+        "clickProps" : {
+            "clickBoundsHeightFactor": 1, 
+            "clickBoundsWidthFactor": 1
+        },
+        "analog_props": {
+            "conversion": {
+                "0": -117,
+                "50": 0,
+                "100": 117
+            }
+        },
+        "blinking": {
+            "color": "yellow"
+        },
+        "logger": {
+            "display" : "false"
+        }
+
     }
+
 ]

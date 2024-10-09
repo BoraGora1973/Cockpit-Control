@@ -17,12 +17,14 @@ export const CMDSInitialValues: Interface.CMDSInterface['input'] = {
      "CH_QTY_IN":	"",
 }
 
-export const LandingGearInitialValues: Interface.LandingGearInterface['input'] = {
+export const LANDINGGEARInitialValues: Interface.LANDINGGEARInterface['input'] = {
      "STORES_CONFIG_IN":	"",
+     "LIGHT_DEMO_IN":	"",
+     "NEEDLE_DEMO_IN":	"",
 }
 
 export const initialValues: { [K in keyof Interface.InterfaceMap]: Interface.InterfaceMap[K]['input'] } = {
 	"CMDS":	CMDSInitialValues,
-	"LandingGear":	LandingGearInitialValues,
+	"LANDINGGEAR":	LANDINGGEARInitialValues,
 }
 
