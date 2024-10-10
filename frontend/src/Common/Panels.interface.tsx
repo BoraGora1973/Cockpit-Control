@@ -1,3 +1,11 @@
+export interface LGControlInterface {
+  input: {
+     "LANDING_GEAR_HANDLE_IN":	string,
+     "LANDING_GEAR_HANDLE_CLICK_IN":	string,
+  }
+  handleSendRequest?: (switchName: string, switchValue: string) => void;
+}
+
 export interface CMDSInterface {
   input: {
      "RWR_SWITCH_IN":	string,
@@ -18,18 +26,16 @@ export interface CMDSInterface {
   handleSendRequest?: (switchName: string, switchValue: string) => void;
 }
 
-export interface LANDINGGEARInterface {
+export interface InteriorLightingInterface {
   input: {
-     "STORES_CONFIG_IN":	string,
-     "LIGHT_DEMO_IN":	string,
-     "NEEDLE_DEMO_IN":	string,
+     "PRIMARY_CONSOLES_BRT_IN":	string,
   }
   handleSendRequest?: (switchName: string, switchValue: string) => void;
 }
 
 export type InterfaceMap = {
      "CMDS":	CMDSInterface;
-     "LANDINGGEAR":	LANDINGGEARInterface;
+     "InteriorLighting":	InteriorLightingInterface;
 }
 
 export type InterfaceKey = keyof InterfaceMap;

@@ -1,6 +1,7 @@
 
-type Type                       = "static" | "stateN" | "knobInteger" | "analog" | "string" | "number";
+type Type                       = "static" | "stateN" | "knobInteger" | "analog_rotation" | "analog_vertical_translation" | "analog_horizontal_translation" | "string" | "number";
 type State                      = boolean  | number    | string;
+export type ClickType           = "click"  | "LongPress";
 
 export interface IncomingMessage {
     panel: string;
@@ -97,7 +98,7 @@ interface BasicData {
     string_props?: {
         maxStringLength: number,
     };
-    blinking: {
+    blinking?: {
         color: string;
     };
     logger? : {
@@ -114,7 +115,9 @@ export interface BasicTypeComponent {
 export interface BasicComponentContainer extends BasicTypeComponent{
     isBlinking?: boolean;
     handleClick? : (componentName: string, clickedName: string) => void;
+    handleLongPress? : (componentName: string, clickedName: string) => void;
 }
+  
 
 export interface GenericTypeComponent extends BasicTypeComponent {
     state: State;
